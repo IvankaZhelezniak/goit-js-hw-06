@@ -12,12 +12,8 @@ function onEventInputBlur(event) {
     if(lengthValueInput !== dataLength) {
         inputRef.classList.add('invalid');
         inputRef.classList.remove('valid');
-    } else {
-        inputRef.classList.add('valid');
-    }
-    if (lengthValueInput === dataLength) {
-        inputRef.classList.add('valid');
+    }else {
+         inputRef.classList.add('valid');
         inputRef.classList.remove('invalid');
     }
-    
 }
