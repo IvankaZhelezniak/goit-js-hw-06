@@ -13,11 +13,11 @@ function onFormSubmit(event) {
     if (email.value === "" || password.value === "") {
     return alert("Пожалуйста, заполните все поля!");
     }
-    
-    console.log({
+    const objectData = {
         email: `${email.value}`,
         password: `${password.value}`,
-    })
+    };
+    console.log(objectData);
     
     event.currentTarget.reset();
     
